@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    // Correct use of innerHTML by converting the number to a string
+    let num = 123;
+    document.getElementById("myDiv").innerHTML = num.toString();
+  </script>
+</body>
+</html>
